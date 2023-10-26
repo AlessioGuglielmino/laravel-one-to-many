@@ -10,6 +10,7 @@
           <tr>
             <th scope="col">ID</th>
             <th scope="col">Titolo</th>
+            <th scope="col">Type</th>
             <th scope="col">Descrizione</th>
             <th scope="col">Url Git</th>
             <th scope="col">Slug</th>
@@ -20,6 +21,7 @@
             <tr>
                 <th scope="row">{{$project->id}}</th>
                 <td>{{$project->title}}</td>
+                <td>{{$project->type->lable}}</td>
                 <td>{{$project->description}}</td>
                 <td>{{$project->url}}</td>
                 <td>{{$project->slug}}</td>
