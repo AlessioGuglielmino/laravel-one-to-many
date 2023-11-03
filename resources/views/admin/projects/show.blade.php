@@ -13,6 +13,7 @@
             <th scope="col">Descrizione</th>
             <th scope="col">Url Git</th>
             <th scope="col">Slug</th>
+            <th scope="col">Cover</th>
           </tr>
         </thead>
         <tbody>
@@ -22,6 +23,7 @@
                 <td>{{$project->description}}</td>
                 <td>{{$project->url}}</td>
                 <td>{{$project->slug}}</td>
+                <td><img src="{{ asset("storage/" . $project->cover_image)}}" alt="ciao" /></td>
               </tr>
            
           
